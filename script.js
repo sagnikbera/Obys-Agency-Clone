@@ -22,13 +22,6 @@ ScrollTrigger.scrollerProxy("#main", {
   pinType: document.querySelector("#main").style.transform ? "transform" : "fixed"
 });
 
-
-tl.from(".purple p", {scale: 0.3, rotation:45, autoAlpha: 0, ease: "power2"})
-  .from(".line-3", {scaleX: 0, transformOrigin: "left center", ease: "none"}, 0)
-  .to(".purple", {backgroundColor: "#28a92b"}, 0);
-
-
-
 // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
 ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
 
