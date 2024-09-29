@@ -49,7 +49,6 @@ body{
 #crsr{
     height: 2.5vw;
     width: 2.5vw;
-    /* background-color: white; */
     border: 1.5px solid white;
     border-radius: 50%;
     position: fixed;
